@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <form method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Update Weekly Status" />
+        </form>
+        <script>
+        $(document).ready(function() {
+            $('#id_description').richText();
+            var myhour = 10800000;
+            setInterval(notifyMe, myhour);
+        });
+        </script>
+
+{% endblock %}
