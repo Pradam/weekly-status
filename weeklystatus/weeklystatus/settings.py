@@ -121,3 +121,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'Abhilash.Pradam'
+EMAIL_HOST_PASSWORD = '*bhil*sh21'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
