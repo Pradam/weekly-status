@@ -8,7 +8,7 @@
         <script>
         $(document).ready(function() {
             $('#id_description').richText();
-            var myhour = 3600000;
+            var myhour = 10800000;
             setInterval(notifyMe, myhour);
         });
         </script>
